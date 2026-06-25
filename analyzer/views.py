@@ -3,27 +3,91 @@ from .forms import ResumeForm
 from PyPDF2 import PdfReader
 
 job_roles = {
-    "Python Developer": [
-        "Python",
-        "Django",
-        "SQL",
-        "Git",
-        "REST API",
+     "Python Developer": [
+        "Python", "Django", "Flask", "SQL",
+        "Git", "REST API", "OOP", "Pandas"
     ],
+
+    "Java Developer": [
+        "Java", "Spring Boot", "Hibernate",
+        "MySQL", "Maven", "Git", "JPA"
+    ],
+
+    "Full Stack Developer": [
+        "HTML", "CSS", "JavaScript",
+        "React", "Node.js", "MongoDB",
+        "Express.js", "Git"
+    ],
+
+    "Frontend Developer": [
+        "HTML", "CSS", "JavaScript",
+        "React", "Bootstrap", "TypeScript"
+    ],
+
+    "Backend Developer": [
+        "Python", "Django", "Node.js",
+        "REST API", "SQL", "Git"
+    ],
+
     "Data Analyst": [
-        "Python",
-        "SQL",
-        "Excel",
-        "Power BI",
-        "Pandas",
+        "Python", "SQL", "Excel",
+        "Power BI", "Tableau", "Statistics"
     ],
-    "Web Developer": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Django",
+
+    "Data Scientist": [
+        "Python", "Machine Learning",
+        "Pandas", "NumPy", "TensorFlow",
+        "Scikit-learn", "SQL"
     ],
+
+    "Machine Learning Engineer": [
+        "Python", "TensorFlow",
+        "PyTorch", "Deep Learning",
+        "Docker", "SQL"
+    ],
+
+    "AI Engineer": [
+        "Python", "Machine Learning",
+        "Deep Learning", "NLP",
+        "TensorFlow", "PyTorch"
+    ],
+
+    "DevOps Engineer": [
+        "Linux", "Docker",
+        "Kubernetes", "AWS",
+        "Jenkins", "Git"
+    ],
+
+    "Cloud Engineer": [
+        "AWS", "Azure",
+        "Docker", "Kubernetes",
+        "Linux", "Terraform"
+    ],
+
+    "Cyber Security Analyst": [
+        "Networking", "Linux",
+        "Python", "Wireshark",
+        "Penetration Testing"
+    ],
+
+    "Software Tester": [
+        "Java", "Selenium",
+        "JUnit", "Automation Testing",
+        "SQL", "TestNG"
+    ],
+
+    "Android Developer": [
+        "Java", "Kotlin",
+        "Android Studio",
+        "Firebase", "SQLite"
+    ],
+
+    "UI/UX Designer": [
+        "Figma", "Adobe XD",
+        "Wireframing", "Prototyping",
+        "User Research"
+    ]
+
 }
 
 def upload_resume(request):
